@@ -1,0 +1,70 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.home {
+  position: relative;
+
+  &__container {
+    gap: calc($gap * 3);
+  }
+
+  &__data {
+    gap: $gap-sm;
+    text-align: center;
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: $m-1;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: $font-ul;
+  }
+
+  &__profession {
+    color: $color-text-alt;
+    font-size: $font-md;
+    margin-bottom: $m-1;
+  }
+
+  &__btn-download {
+    display: inline-block;
+    font-weight: $font-w-md;
+    border: 2px solid $color-text;
+    padding: $m-2 $m-4;
+    border-radius: calc($m-1 / 2);
+    margin-top: $m-3;
+    
+    &:hover {
+      color: $color-accent;
+      background-color: transparent;
+      border: 2px solid $color-accent;
+    }
+  }
+
+  &__address {
+    width: max-content;
+    gap: $gap;
+  }
+
+  &__information {
+    display: flex;
+    align-items: center;
+    font-size: $font-sm;
+
+    &:focus {
+      text-shadow: 5px 5px 5px $color-accent;
+    }
+  }
+
+  &__icon {
+    color: $color-accent;
+    font-size: $font-lg;
+    margin-right: calc($m-1 / 2);
+  }
+}

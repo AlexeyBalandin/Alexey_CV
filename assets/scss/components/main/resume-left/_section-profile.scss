@@ -1,0 +1,9 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.profile {
+  &__description {
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,77 @@
+@use "../../common" as *;
+@use "../../presets" as *;
+
+@media screen and (max-width: $xs) {
+  .change-theme {
+    top: 70px;
+    right: 0;
+  }
+
+  .change-lang {
+    top: $m-4;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .change-theme {
+    margin-top: 3px;
+    right: 3.75rem;
+  }
+
+  .change-lang {
+    top: $m-4;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .wrapper {
+    background-color: $color-body;
+    padding: $m-5 0;
+  }
+
+  .bd-container {
+    margin: 0 auto;
+  }
+
+  .l-aside,
+  .scrolltop {
+    display: none;
+  }
+
+  .resume {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    background-color: $color-container;
+    box-shadow: 0 0 8px rgba( 13, 12, 12, .15);
+
+    &__left {
+      background-color: $color-container-alt;
+    }
+
+    &__left,
+    &__right {
+      padding: 0 $m-3;
+    }
+  }
+
+  .download-pdf {
+    display: block;
+    position: absolute;
+    top: $m-4;
+    left: 0;
+    font-size: $font-ul;
+    color: $color-text;
+    cursor: pointer;
+    transition: color .3s ease;
+
+  &::before {
+    display: none;
+  }  
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+}

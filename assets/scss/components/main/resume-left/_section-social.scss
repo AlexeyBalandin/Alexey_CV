@@ -1,0 +1,27 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.social {
+  &__container {
+    grid-template-columns: max-content;
+    gap: $gap;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: $font-sm;
+    color: $color-text;
+    gap: calc($gap-sm / 2.5);
+    
+    &:focus {
+      text-shadow: 5px 5px 5px $color-accent;
+    }
+  }
+
+  &__icon {
+    color: $color-accent;
+    font-size: $font-lg;
+    margin-right: calc($m-1 / 2);
+  }
+}

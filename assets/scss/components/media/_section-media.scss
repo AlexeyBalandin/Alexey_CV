@@ -1,0 +1,45 @@
+@use "../../common" as *;
+@use "../../presets" as *;
+
+@media  screen and (max-width: $xs) {
+  .skills {
+    &__content {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media  screen and (max-width: $md) {
+  .about-me {
+    margin-top: 0;
+  }
+
+  .download-pdf {
+    display: none;
+  }
+}
+
+@media  screen and (min-width: $md) {
+
+  .home {
+    &__container {
+      gap: calc($gap * 1.5);
+    }
+
+    &__img {
+      width: 200px;
+      height: 200px;
+    }
+
+    &__btn-download {
+      display: none;
+    }
+  }
+
+  .interests {
+    &__container {
+      column-gap: calc($gap * 3.5);
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.education {
+  &__line {
+    height: 115%;
+  }
+}
+.experience {
+  &__line {
+    height: 104%;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    margin-top: $m-2;
+  }
+}
+
+.education,
+.experience {
+  &__content {
+    display: flex;
+  }
+
+  &__time {
+    padding-right: $m-1;
+  }
+
+  &__rounder {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: $color-accent;
+    border-radius: 50%;
+    margin-top: calc($m-1 / 2);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 10px;
+      height: 10px;
+      background-color: $color-body;
+      border-radius: 50%;
+    }
+  }
+
+  &__line {
+    display: block;
+    width: 2px;
+    background-color: $color-accent;
+    transform: translate(7px, 0);
+  }
+
+  &__data {
+    gap: calc($gap / 2);
+  }
+
+  &__title {
+    font-size: $font-md;
+  }
+
+  &__studies,
+  &__profession {
+    font-size: $font-xs;
+    color: $color-text-alt;
+  }
+
+  &__year {
+    font-size: $font-xxs;
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+  }
+
+  &__item {
+    position: relative;
+    margin-left: $m-2;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: -15px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $color-accent;
+    }
+  }
+}

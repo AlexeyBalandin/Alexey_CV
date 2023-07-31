@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+$font-primary: 'Montserrat', sans-serif;
+/* ======== Font size ======== */
+$font-ul: var(--font-ul);
+$font-lg: var(--font-lg);
+$font-md: var(--font-md);
+$font-sm: var(--font-sm);
+$font-xs: var(--font-xs);
+$font-xxs: var(--font-xxs);
+/* ======== Font weight ======== */
+$font-w-md: var(--font-w-md);
+$font-w-bold: var(--font-w-bold);
+
+:root {
+ --font-ul: 1.5rem;
+ --font-lg: 1.25rem;
+ --font-md: 1rem;
+ --font-sm: .938rem;
+ --font-xs: .938rem;
+ --font-xxs: .831rem;
+
+ --font-w-md: 500;
+ --font-w-bold: 600;
+}

@@ -1,0 +1,60 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.scrolltop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc($m-1 / 1.7);
+  right: calc($m-2 * 1.2);
+  bottom: -20%;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  border-radius: .4rem;
+  z-index: $z-tooltip;
+  transition: .4s;
+  visibility: hidden;
+  font-size: $font-ul;
+
+  &__icon {
+    color: $color-text;
+  }
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: calc($m-4 * 2);
+}
+
+.change-theme {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: $m-4;
+  color: $color-text;
+  font-size: $font-ul;
+  cursor: pointer;
+  transition: color .3s ease;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.change-lang {
+  position: absolute;
+  top: $m-4;
+  right: -6.25rem;
+  color: $color-text;
+  background-color: $color-container-alt;
+  border-radius: 10px;
+  padding: 2px;
+  cursor: pointer;
+  transition: .3s ease;
+  transition-property: color;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+

@@ -1,0 +1,12 @@
+@use "../../../mixins" as *;
+@use "../../../presets/" as *;
+
+.languages {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

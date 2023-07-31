@@ -1,0 +1,43 @@
+@use "../../common" as *;
+@use "../../presets" as *;
+
+@media screen and (max-width: $xxxs) {
+  .nav {
+		&__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $gap $gap-sm;
+		}
+  }
+}
+
+@media screen and (max-width: $xs){
+  .nav {
+    &__menu {
+      padding: 1.5rem 1rem;
+    }
+  
+    &__list {
+      gap: calc($gap * 1.5) $gap;
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
+  .nav {
+    &__menu {
+      position: fixed;
+      width: 100%;
+      bottom: -100%;
+      left: 0;
+      padding: 2rem 1.5rem;
+      background-color: $color-container-alt;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+      border-radius: 1rem 1rem 0 0;
+      z-index: $z-fixed;
+    }
+
+    .show-menu {
+      bottom: $m-5;
+    }    
+  }
+}

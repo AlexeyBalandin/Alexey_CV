@@ -1,0 +1,27 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.skills,
+.languages {
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  &__name {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: $font-sm;
+    margin-bottom: $m-3;
+    gap: $gap-sm;
+  }
+
+  &__icon {
+    font-size: $font-ul;
+    color: $color-accent;
+  }
+}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description"
+    content="Я веб-разработчик с уклоном во фронтенд. Мои навыки включают HTML, CSS, JavaScript. Я стремлюсь создавать красивые и интерактивные веб-приложения, а также обеспечивать их высокую производительность. Посетите мое резюме, чтобы узнать больше о моем опыте и проектах.">
+  <title>Alexey CV - Front-End Web Developer</title>
+  <link rel="canonical" href="https://alexeybalandin.github.io/Resume_CV/" />
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+</head>
+
+<body class="dark-theme">
+  <div class="wrapper">
+    <aside class="l-aside" id="aside">
+      <div class="nav bd-container">
+        <a href="#home" class="nav__logo lang" data-translate="name">B.Alexey</a>
+
+        <nav class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>
+                <span class="lang" data-translate="home">Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>
+                <span class="lang" data-translate="profile">Profile</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>
+                <span class="lang" data-translate="education">Education</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#languages" class="nav__link">
+                <i class="fa-solid fa-language nav__icon"></i>
+                <span class="lang" data-translate="languages">Languages</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about-me" class="nav__link">
+                <i class='bx bx-id-card nav__icon'></i>
+                <span class="lang" data-translate="aboutMe">About me</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>
+                <span class="lang" data-translate="skills">Skills</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>
+                <span class="lang" data-translate="experience">Experience</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main class="l-main bd-container">
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img src="assets/img/myfoto-black.webp" alt="my profile image" class="home__img" />
+                <h1 class="home__title lang" data-translate="name">B.Alexey</h1>
+                <h2 class="home__profession lang" data-translate="profession">Front-End Web Developer</h2>
+                <div>
+                  <a download="" href="assets/pdf/Alexey_CV.pdf" class="home__btn-download lang"
+                    data-translate="home-btn-download">
+                    Download CV
+                  </a>
+                </div>
+              </div>
+
+              <div class="home__address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i>
+                  Chisinau - Moldova
+                </span>
+                <a href="mailto:aalexeybalandin@gmail.com" class="home__information">
+                  <i class="bx bx-envelope home__icon"></i>
+                  aalexeybalandin@gmail.com
+                </a>
+                <a href="https://t.me/Alexey_Balandin" class="home__information">
+                  <i class='bx bxl-telegram home__icon'></i>
+                  Telegram
+                </a>
+                <a href="tel:+37376768156" class="home__information">
+                  <i class="bx bx-phone home__icon"></i>
+                  +3 (737) 676-81-56
+                </a>
+              </div>
+            </div>
+
+            <i class="bx bx-moon change-theme" title="Theme" id="theme-btn"></i>
+            <a download="" href="assets/pdf/Alexey_CV.pdf" class="download-pdf">
+              <i class="bx bx-download" title="Download PDF" id="resume-btn"></i>
+            </a>
+
+            <select class="change-lang" id="language-switcher">
+              <option value="en">EN</option>
+              <option value="ru">RU</option>
+            </select>
+          </section>
+
+          <section class="social section">
+            <h2 class="section-title lang" data-translate="social">SOCIAL</h2>
+
+            <div class="social__container bd-grid">
+              <a href="https://github.com/AlexeyBalandin" target="_blank" class="social__link">
+                <i class='bx bxl-github social__icon'></i>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/alexey-balandin-443929251/" target="_blank" class="social__link">
+                <i class='bx bxl-linkedin-square social__icon'></i>
+                LinkedIn
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100002187675028" target="_blank" class="social__link">
+                <i class='bx bxl-facebook-square social__icon'></i>
+                Facebook
+              </a>
+              <a href="https://www.instagram.com/balandinalexeyy/" target="_blank" class="social__link">
+                <i class='bx bxl-instagram-alt social__icon'></i>
+                Instagram
+              </a>
+            </div>
+          </section>
+
+          <section class="profile section" id="profile">
+            <h2 class="section-title lang" data-translate="profile">Profile</h2>
+            <p class="profile__description lang" data-translate="profile-description">
+              My profile showcases my passion and experience as a frontend developer with a focus on web technologies.
+              With a solid foundation in HTML, CSS, and JavaScript, I bring creativity and innovation to my projects. I
+              have honed my skills through hands-on experience and working with various popular frameworks and
+              libraries, allowing me to create responsive and dynamic interfaces.
+            </p>
+          </section>
+
+          <section class="education section" id="education">
+            <h2 class="section-title lang" data-translate="education">Education</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">SkillUp</h3>
+                  <span class="education__studies lang" data-translate="profession">Front-End Web
+                    Developer</span>
+                  <span class="education__year">2020 - 2021</span>
+                </div>
+              </div>
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title lang" data-translate="education-title-university">State University of
+                    Moldova</h3>
+                  <span class="education__studies lang" data-translate="education-studies-university">Economic</span>
+                  <span class="education__year">2013-2017</span>
+                </div>
+              </div>
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title lang" data-translate="education-title-college">Financial and Banking
+                    College</h3>
+                  <span class="education__studies lang" data-translate="education-studies-university">Economic</span>
+                  <span class="education__year">2010 - 2015</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="languages section" id="languages">
+            <h2 class="section-title lang" data-translate="languages">languages</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle lang" data-translate="languages-name-english">English (A2)</span>
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle lang" data-translate="languages-name-russian">Russian (Fluent)</span>
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle lang" data-translate="languages-name-moldavian">Moldavian (A2)</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <section class="about-me section" id="about-me">
+            <h2 class="section-title lang" data-translate="aboutMe">About me</h2>
+
+            <div class="about-me__container bd-grid">
+              <div class="about-me__content">
+                <p class="about-me__description lang" data-translate="about-me-description1">
+                  I am an enthusiastic frontend developer with experience in web technologies. I have a strong knowledge
+                  of HTML, CSS, and JavaScript, as well as hands-on experience with popular frameworks and libraries. As
+                  a detail-oriented developer, I strive to create visually appealing and user-friendly interfaces that
+                  provide an exceptional user experience.
+                </p>
+                <p class="about-me__description lang" data-translate="about-me-description2">
+                  I also pay attention not only to creating visually appealing and user-friendly interfaces but also to
+                  SEO and PageSpeed optimization. Understanding the importance of visibility in search engines and
+                  website performance, I implement SEO practices and strive to optimize page loading times.
+                </p>
+                <p class="about-me__description lang" data-translate="about-me-description3">
+                  I have a strong understanding of responsive web design, enabling my projects to seamlessly adapt to
+                  various devices and screen sizes. With a keen focus on writing clean and user-friendly code, I always
+                  strive to follow best coding practices and industry standards.
+                </p>
+                <p class="about-me__description lang" data-translate="about-me-description4">
+                  With a creative mindset, I enjoy collaborating with designers and fellow developers, transforming
+                  design concepts into functional and efficient web applications. My continuous eagerness to learn new
+                  technologies and stay updated on the latest industry trends enables me to create innovative and
+                  cutting-edge solutions.
+                </p>
+                <p class="about-me__description lang" data-translate="about-me-description5">
+                  As a frontend developer, I find fulfillment in crafting intuitive and visually appealing user
+                  interfaces that positively impact end-users. I am eager to tackle new challenges and contribute to
+                  creating remarkable digital experiences.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="skills section" id="skills">
+            <h2 class="section-title lang" data-translate="skills">Skills</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <i class='bx bxl-html5 skills__icon'></i>
+                  HTML5 (BEM)
+                </li>
+                <li class="skills__name">
+                  <i class='bx bxl-css3 skills__icon'></i>
+                  CSS3
+                </li>
+                <li class="skills__name">
+                  <i class='bx bxl-sass skills__icon'></i>
+                  Sass / SCSS
+                </li>
+                <li class="skills__name">
+                  <i class='bx bx-layout skills__icon'></i>
+                  Flexbox / Grid
+                </li>
+                <li class="skills__name">
+                  <i class='bx bxl-bootstrap skills__icon'></i>
+                  Bootstrap
+                </li>
+                <li class="skills__name">
+                  <i class='bx bxl-javascript skills__icon'></i>
+                  JavaScript
+                </li>
+              </ul>
+
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <i class='bx bxl-jquery skills__icon'></i>
+                  jQuery Libraries
+                </li>
+                <li class="skills__name">
+                  <i class='bx bxl-nodejs skills__icon'></i>
+                  npm / Yarn
+                </li>
+                <li class="skills__name">
+                  <i class='bx bxs-component skills__icon'></i>
+                  Gulp / Webpack
+                </li>
+                <li class="skills__name">
+                  <i class='bx bxl-figma skills__icon'></i>
+                  Figma / Photoshop / PDF
+                </li>
+                <li class="skills__name">
+                  <i class='bx bx-mobile-alt skills__icon'></i>
+                  Responsive Web Design
+                </li>
+                <li class="skills__name">
+                  <i class='bx bx-line-chart skills__icon'></i>
+                  SEO / PageSpeed
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="experience section" id="experience">
+            <h2 class="section-title lang" data-translate="experience">Experience</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title lang" data-translate="experience-title-upwork">UpWork (Freelance)</h3>
+                  <span class="experience__profession lang" data-translate="profession">Front-End Web Developer</span>
+                  <span class="experience__year lang" data-translate="experience-year">From 2021 to Present</span>
+                  <div class="experience__description">
+                    <p class="lang" data-translate="experience-description-upwork1">
+                      My main responsibility is developing responsive websites for clients based on web designers'
+                      mockups. I collaborate with clients to understand their requirements and propose customized
+                      solutions. I create visually appealing and user-friendly websites tailored to specific client
+                      needs.</p>
+                    <p class="lang" data-translate="experience-description-upwork2">
+                      I utilize HTML, CSS, and JavaScript to build interactive and visually engaging user interfaces.
+                      The
+                      use of SASS preprocessors optimizes styles and enhances maintainability. To enhance website
+                      functionality, I incorporate frameworks and libraries.</p>
+                    <p class="lang" data-translate="experience-description-upwork3">
+                      I regularly analyze code and conduct optimizations to improve website loading speed. Leveraging my
+                      expertise in CSS animations and transitions, I add interactive elements that provide a pleasant
+                      user
+                      experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title lang" data-translate="experience-title-weblancer">Weblancer (Freelance)
+                  </h3>
+                  <span class="experience__profession lang" data-translate="profession">Front-End Web Developer</span>
+                  <span class="experience__year lang" data-translate="experience-year">From 2021 to Present</span>
+                  <div class="experience__description">
+                    <p class="lang" data-translate="experience-description-weblancer1">
+                      My main task is to develop responsive websites for clients. When collaborating with clients, I
+                      strive to understand their requirements and offer personalized solutions. Cross-browser
+                      compatibility, valid, and adaptive coding methods are at the core of my development process.</p>
+                    <p class="lang" data-translate="experience-description-weblancer2">
+                      I transform projects from PSD, Sketch, Figma, Zeplin, and Adobe XD into fully functional websites.
+                      My experience lies in creating adaptive and responsive websites that adjust to different screen
+                      sizes and devices.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title lang" data-translate="experience-title-freelancer">Freelancer</h3>
+                  <span class="experience__profession lang" data-translate="profession">Front-End Web Developer</span>
+                  <span class="experience__year lang" data-translate="experience-year">From 2021 to Present</span>
+                  <div class="experience__description">
+                    <p class="lang" data-translate="experience-description-freelancer1">
+                      My task as a freelancer is to provide web development services with a focus on creating
+                      high-quality and responsive websites. I aim to meet the clients' needs and offer customized
+                      solutions that align with their objectives.</p>
+                    <ul class="experience__list lang">
+                      <li class="experience__item lang" data-translate="experience-description-freelancer2">
+                        Cross-browser compatible, valid, and responsive coding. Only clean and understandable code.
+                      </li>
+                      <li class="experience__item lang" data-translate="experience-description-freelancer3">
+                        I convert designs from PSD, Sketch, Figma, Zeplin, and Adobe XD into fully functional
+                        websites.
+                      </li>
+                      <li class="experience__item lang" data-translate="experience-description-freelancer4">
+                        Adaptability, responsiveness (responsive design), and fluidity.
+                      </li>
+                      <li class="experience__item lang" data-translate="experience-description-freelancer5">
+                        CSS3/JS website animations.
+                      </li>
+                      <li class="experience__item lang" data-translate="experience-description-freelancer6">
+                        Maintenance, content management, and support for websites and e-commerce platforms.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="interests section">
+            <h2 class="section-title lang" data-translate="interests">Interests</h2>
+
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <i class="bx bxs-music interests__icon"></i>
+                <span class="interests__name lang" data-translate="interests-name-music">Music</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bxs-plane-alt interests__icon"></i>
+                <span class="interests__name lang" data-translate="interests-name-travel">Travel</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bxs-coffee-bean interests__icon"></i>
+                <span class="interests__name lang" data-translate="interests-name-coffee">Coffee</span>
+              </div>
+              <div class="interests__content">
+                <i class='bx bx-dumbbell interests__icon'></i>
+                <span class="interests__name lang" data-translate="interests-name-sport">Sport</span>
+              </div>
+              <div class="interests__content">
+                <i class='bx bx-brain interests__icon'></i>
+                <span class="interests__name lang" data-translate="interests-name-self-dev">Self-dev</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevrons-up"></i>
+    </a>
+  </div>
+
+  <script>
+    function loadCSS(src) {
+      const link = document.createElement("link");
+      link.href = src;
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      document.head.appendChild(link);
+    }
+
+    const raf =
+      window.requestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      window.webkitRequestAnimationFrame ||
+      window.msRequestAnimationFrame;
+
+    if (raf) {
+      raf(() => {
+        loadCSS('assets/css/style.css');
+      });
+    } else {
+      window.addEventListener('load', () => {
+        loadCSS('assets/css/style.css');
+      });
+    }
+  </script>
+
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/language.js"></script>
+</body>
+
+</html>

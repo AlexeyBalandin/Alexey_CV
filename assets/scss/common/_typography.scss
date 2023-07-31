@@ -1,0 +1,55 @@
+@use "../presets" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  font-weight: 400;
+  font-family: $font-primary;
+  font-display: swap;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+a,
+p,
+span {
+  transition: color .3s ease-in;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  color: $color-accent;
+  font-weight: $font-md;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

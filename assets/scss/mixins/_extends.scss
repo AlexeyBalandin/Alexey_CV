@@ -1,0 +1,6 @@
+@use "../presets" as *;
+
+%bd-container {
+  width: min(100% - $m-5, $lg);
+  margin: 0 $m-3;
+}

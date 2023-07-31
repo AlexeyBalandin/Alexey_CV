@@ -1,0 +1,63 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.wrapper {
+  min-height: 100%;
+  background-color: $color-container;
+  color: $color-text;
+  scroll-behavior: smooth;
+}
+
+.bd-container {
+  @extend %bd-container;
+}
+
+.bd-grid {
+  display: grid;
+  gap: calc($gap * 1.5);
+}
+
+.section {
+  padding: 1.5rem 1rem;
+}
+
+.l-aside {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: $color-container-alt;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, .1);
+}
+
+.l-main {
+  padding-bottom: $m-5;
+}
+
+.section-title {
+  font-size: $font-lg;
+  color: $color-accent;
+  font-weight: $font-w-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  text-align: center;
+  margin-bottom: $m-3;
+}
+
+.show-menu {
+  bottom: $m-5;
+}
+
+.active-link {
+  color: $color-accent;
+}
+
+.education,
+.experience,
+.profile,
+.certificate {
+  &__description {
+    font-size: $font-xs;
+  }
+}

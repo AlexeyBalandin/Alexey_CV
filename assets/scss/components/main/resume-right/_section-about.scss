@@ -1,0 +1,17 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.about-me {
+  margin-top: 10px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+  }
+  
+  &__title {
+    font-size: $font-md;
+    margin-bottom: $m-1;
+  }
+}
