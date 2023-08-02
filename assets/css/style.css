@@ -816,7 +816,7 @@ img {
 
   font-size: var(--font-ul);
 }
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 856px) {
   .home__container {
     gap: 1.5rem;
   }
@@ -882,7 +882,7 @@ img {
     color: var(--color-accent);
   }
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 856px) {
   .nav__menu {
     position: fixed;
     z-index: 100;
