@@ -14,7 +14,6 @@ body {
   height: 100%;
   font-weight: 400;
   font-family: $font-primary;
-  font-display: swap;
   font-size: 16px;
   line-height: 1.2;
   padding: 0;
@@ -42,7 +41,7 @@ span {
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
   color: $color-accent;
-  font-weight: $font-md;
+  font-weight: $font-w-md;
 }
 
 ul {

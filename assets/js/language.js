@@ -148,4 +148,4 @@ languageSwitcher.addEventListener('change', (event) => {
   updateLanguage(selectedLanguage);
 });
 
-updateLanguage('en');
+updateLanguage('ru');
