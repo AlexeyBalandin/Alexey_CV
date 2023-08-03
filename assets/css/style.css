@@ -863,7 +863,7 @@ img {
     top: 2rem;
     left: 0;
 
-    display: none;
+    display: block;
 
     cursor: pointer;
     -webkit-transition: color 0.3s ease;
