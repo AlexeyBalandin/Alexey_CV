@@ -27,7 +27,8 @@ a {
   color: $color-text;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-accent;
   }
 }
@@ -35,10 +36,15 @@ a {
 a,
 p,
 span {
-  transition: color .3s ease-in;
+  transition: color 0.3s ease-in;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   color: $color-accent;
   font-weight: $font-w-md;
