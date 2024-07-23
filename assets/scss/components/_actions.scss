@@ -16,9 +16,24 @@
   visibility: hidden;
   font-size: $font-ul;
 
+  animation: impulse 3s ease 0s infinite normal forwards;
+
   &__icon {
     color: $color-text;
   }
+}
+
+@keyframes impulse {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
 }
 
 .show-scroll {
