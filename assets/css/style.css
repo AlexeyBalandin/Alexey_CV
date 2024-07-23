@@ -218,6 +218,7 @@ body {
 
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -269,8 +270,6 @@ img {
 
   color: var(--color-text);
   background-color: var(--color-container);
-
-  scroll-behavior: smooth;
 }
 
 .bd-grid {
@@ -416,7 +415,23 @@ img {
   background-color: rgba(0, 0, 0, 0.3);
 
   font-size: var(--font-ul);
+
+  animation: impulse 3s ease 0s infinite normal forwards;
 }
+
+@keyframes impulse {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
 .scrolltop__icon {
   color: var(--color-text);
 }
