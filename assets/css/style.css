@@ -214,11 +214,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
+
+  scroll-behavior: smooth;
 }
 
 body {
   height: 100%;
-  scroll-behavior: smooth;
 }
 
 a {
