@@ -103,17 +103,19 @@ const languageStrings = {
     // Experience
     // UpWork
     'experience-title-upwork': 'UpWork (Фриланс)',
-    'experience-year': 'С 2021 по н.в',
+    'experience-profession-upwork': 'Front-End Web Developer | 2021 – наст. время',
     'experience-description-upwork1': 'Реализовал 20+ адаптивных сайтов для международных клиентов.',
     'experience-description-upwork2': 'Ускорил загрузку проектов до 40% за счёт оптимизации кода, анимаций и изображений.',
     'experience-description-upwork3': 'Превращал макеты из Figma/XD/PSD в полностью рабочие сайты с кроссбраузерной совместимостью.',
     // Weblancer
     'experience-title-weblancer': 'Weblancer (Фриланс)',
+    'experience-profession-weblancer': 'Front-End Web Developer | 2021 – наст. время',
     'experience-description-weblancer1': 'Разработал индивидуальные решения для стартапов и бизнеса, создавая адаптивные дизайны, которые подстраиваются под все размеры экранов.',
     'experience-description-weblancer2': 'Писал валидный, SEO-дружественный и mobile-first код.',
     'experience-description-weblancer3': 'Создавал кастомные решения для стартапов и малого бизнеса.',
     // Freelancer
     'experience-title-freelancer': 'Фрилансер',
+    'experience-profession-freelancer': 'Front-End Web Developer | 2021 – наст. время',
     'experience-description-freelancer1': 'Делал сайты с акцентом на UI и анимации CSS3.',
     'experience-description-freelancer2': 'Разрабатывал и поддерживал проекты на WordPress с кастомными темами.',
     'experience-description-freelancer3': 'Обеспечивал обслуживание, обновление и управление контентом веб-сайтов электронной коммерции и корпоративных сайтов.',
