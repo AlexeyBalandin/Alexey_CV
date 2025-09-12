@@ -214,12 +214,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
-
-  scroll-behavior: smooth;
 }
 
 body {
   height: 100%;
+
+  scroll-behavior: smooth;
 }
 
 a {
@@ -271,6 +271,8 @@ img {
 
   color: var(--color-text);
   background-color: var(--color-container);
+
+  scroll-behavior: smooth;
 }
 
 .bd-grid {
@@ -411,34 +413,49 @@ img {
 
   -webkit-transition: 0.4s;
           transition: 0.4s;
+  -webkit-animation: impulse 3s ease 0s infinite normal forwards;
+          animation: impulse 3s ease 0s infinite normal forwards;
 
   border-radius: 0.4rem;
   background-color: rgba(0, 0, 0, 0.3);
 
   font-size: var(--font-ul);
-
-  animation: impulse 3s ease 0s infinite normal forwards;
 }
-
-@keyframes impulse {
-	0%,
-	50%,
-	100% {
-		opacity: 1;
-		scale: 1.2;
-	}
-
-	25%,
-	75% {
-		opacity: 0;
-		scale: 1;
-	}
-}
-
 .scrolltop__icon {
   color: var(--color-text);
 }
 
+@-webkit-keyframes impulse {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+
+    scale: 1.2;
+  }
+  25%,
+  75% {
+    opacity: 0;
+
+    scale: 1;
+  }
+}
+
+@keyframes impulse {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+
+    scale: 1.2;
+  }
+  25%,
+  75% {
+    opacity: 0;
+
+    scale: 1;
+  }
+}
 .show-scroll {
   bottom: 4rem;
 
@@ -718,6 +735,9 @@ img {
 
 .profile__description {
   text-align: center;
+  text-wrap: balance;
+
+  font-style: italic;
 }
 
 .skills__content,
@@ -760,7 +780,7 @@ img {
 .about-me {
   margin-top: 10px;
 }
-.about-me__content {
+.about-me__content p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,6 +795,11 @@ img {
   margin-bottom: 0.5rem;
 
   font-size: var(--font-md);
+}
+.about-me__description {
+  text-align: center;
+
+  font-style: italic;
 }
 
 .languages__content {

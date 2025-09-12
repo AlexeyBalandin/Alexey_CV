@@ -1,12 +1,11 @@
-const {task, series, parallel, src, dest, watch} = require('gulp');
+const { task, series, parallel, src, dest, watch } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const dc = require('postcss-discard-comments');
 const browserSync = require('browser-sync');
 const postcss = require('gulp-postcss');
 const csscomb = require('gulp-csscomb');
 const autoprefixer = require('autoprefixer');
-const mqpacker = require('css-mqpacker');
-const sortCSSmq = require('sort-css-media-queries');
+const sortMediaQueries = require('postcss-sort-media-queries');
 
 const option = process.argv[3];
 
@@ -25,7 +24,7 @@ const PATH = {
 };
 
 const PLUGINS = [
-  dc({discardComments: true}),
+  dc({ discardComments: true }),
   autoprefixer({
     overrideBrowserslist: [
       'last 5 versions',
@@ -33,16 +32,16 @@ const PLUGINS = [
     ],
     cascade: true
   }),
-  mqpacker({sort: sortCSSmq})
+  sortMediaQueries()
 ];
 
 function scss() {
   return src(PATH.scssRoot)
-      .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-      .pipe(postcss(PLUGINS))
-      .pipe(csscomb())
-      .pipe(dest(PATH.cssFolder))
-      .pipe(browserSync.stream());
+    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(postcss(PLUGINS))
+    .pipe(csscomb())
+    .pipe(dest(PATH.cssFolder))
+    .pipe(browserSync.stream());
 }
 
 function scssDev() {
@@ -50,22 +49,22 @@ function scssDev() {
 
   pluginsForDevMode.splice(1, 1);
 
-  return src(PATH.scssRoot, {sourcemaps: true})
-      .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-      .pipe(postcss(pluginsForDevMode))
-      .pipe(dest(PATH.cssFolder, {sourcemaps: true}))
-      .pipe(browserSync.stream());
+  return src(PATH.scssRoot, { sourcemaps: true })
+    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(postcss(pluginsForDevMode))
+    .pipe(dest(PATH.cssFolder, { sourcemaps: true }))
+    .pipe(browserSync.stream());
 }
 
 function comb() {
   return src(PATH.scssFiles)
-      .pipe(csscomb())
-      .pipe(dest(PATH.scssFolder));
+    .pipe(csscomb())
+    .pipe(dest(PATH.scssFolder));
 }
 
 function syncInit() {
   browserSync({
-    server: {baseDir: './'},
+    server: { baseDir: './' },
     notify: false
   });
 }
@@ -99,11 +98,11 @@ function createStructure() {
   file[2] = `${PATH.jsFolder}main.js`;
   file[3] = scssFiles;
 
-  src('*.*', {read: false})
-      .pipe(dest(PATH.scssFolder))
-      .pipe(dest(PATH.cssFolder))
-      .pipe(dest(PATH.jsFolder))
-      .pipe(dest(PATH.imgFolder));
+  src('*.*', { read: false })
+    .pipe(dest(PATH.scssFolder))
+    .pipe(dest(PATH.cssFolder))
+    .pipe(dest(PATH.jsFolder))
+    .pipe(dest(PATH.imgFolder));
 
   return new Promise((resolve) => setTimeout(() => {
     for (let i = 0; i < file.length; i++) if (!Array.isArray(file[i])) {

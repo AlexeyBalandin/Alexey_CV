@@ -1,5 +1,6 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-console */
+/* eslint linebreak-style: 0 */
 const languageStrings = {
   en: {
     home: 'Home',

@@ -4,14 +4,19 @@
 .about-me {
   margin-top: 10px;
 
-  &__content {
+  &__content p {
     display: flex;
     flex-direction: column;
     gap: $gap;
   }
-  
+
   &__title {
     font-size: $font-md;
     margin-bottom: $m-1;
+  }
+
+  &__description {
+    text-align: center;
+    font-style: italic;
   }
 }
